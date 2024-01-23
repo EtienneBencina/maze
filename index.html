@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Labirint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="canvas">
+        <canvas id="myCanvas" height="800px" width="800px">
+            <img src="slike/maze.png" id="maze">
+        </canvas>
+
+    </div>
+    <script>
+        window.onload = function () {
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            const img = document.getElementById("maze");
+            ctx.drawImage(img, 10, 10);
+        };
+        var timer;
+        var x = 343;
+        var y = 0;
+        var w = 10;
+        var h = 0;
+        crta();
+        function crta(){
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(x, y, w, h);
+        h += 5;
+        if(h>=75){
+            clearInterval(timer)
+        }
+        }    
+        timer=setInterval(crta, 40);
+
+    </script>
+</body>
+
+</html>
