@@ -8,13 +8,22 @@
 
 <body>
     <div id="MyCanvas">
-        <canvas id="canvas" height="500px" width="500px">
+        <canvas id="canvas" height="484px" width="484px">
             <img src="slike/maze.png" id="maze">
+            
+        </canvas>
+        <canvas id="canvas2" height="484px" width="484px">
+            
+            
         </canvas>
     </div>
-    <form id="form">
-        <button type="button" class="solve" id="sol" onclick="drawSolution();" >SOLVE</button>
-    </form>
+    <div>
+        <form id="form">
+            <button type="button" class="solve" id="sol" onclick="drawSolution();" >DRAW</button>
+            <button type="button"  id="sol" onclick="window.location.reload();" >ERASE</button>
+        </form>
+    </div>
+    
     
         
 

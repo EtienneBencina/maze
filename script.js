@@ -69,11 +69,12 @@ var cord = [
 
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
+    
     const img = document.getElementById("maze");
     ctx.drawImage(img, 0, 0);
 
-
-
+    const canvas2 = document.getElementById("canvas2");
+    const ctx2 = canvas2.getContext("2d");
 
 
 
@@ -89,19 +90,7 @@ path = [
     [314, 426], [314, 410], [282, 410], [282, 394], [330, 394], [330, 362], [346, 362], [346, 346], [282, 346], [282, 330],
     [250, 330], [250, 346], [266, 346], [266, 426], [282, 426], [282, 458], [266, 458], [266, 474], [250, 474], [250, 482]
 ]
-function drawMaze() {
-    
-    ctx.beginPath();
-    for (i = 0; i < cord.length; i++) {
-      ctx.moveTo(cord[i][0], cord[i][1]);
-      ctx.lineTo(cord[i][2], cord[i][3]);
-    }
-    ctx.lineWidth = 2;
-    ctx.strokeStyle = "grey";
-    ctx.stroke();
-    
-    ctx.closePath();
-  }
+
   
   
   
@@ -111,10 +100,14 @@ function drawMaze() {
     
     
     const drawLinesWithDelay = (ctx, path, delay, style) => {
-  
-      ctx.beginPath();
-      ctx.strokeStyle = "black";
       
+      var pencil=new Image();
+      pencil.src="slike/pencil.png";
+      
+      
+
+      ctx.beginPath();
+      ctx.strokeStyle = "grey";
       ctx.lineWidth = 4;
   
       const drawLineSegment = (i) => {
@@ -124,8 +117,16 @@ function drawMaze() {
   
         if (i === 0) {
           ctx.moveTo(x, y);
+          ctx2.clearRect(0,0,canvas2.width,canvas2.height);
+          //ctx.drawImage(img, 0, 0);
+          ctx2.drawImage(pencil,x,y);
+          
         } else {
           ctx.lineTo(x, y);
+          ctx2.clearRect(0,0,canvas2.width,canvas2.height);
+          //ctx.drawImage(img, 0, 0);
+          ctx2.drawImage(pencil,x,y);
+          
         }
   
         ctx.stroke();
@@ -136,7 +137,7 @@ function drawMaze() {
           }, delay);
         } else {
           ctx.closePath();
-          document.getElementById("sol").removeAttribute("disabled");
+          
           
   
         }
