@@ -7,22 +7,24 @@
 </head>
 
 <body>
+    <h1>NEWSPAPER MAZE</h1>
+    <div id="buttons">
+        <form id="form">
+            <button type="button" class="solve" id="sol" onclick="drawSolution();" >DRAW</button><br/><br/>
+            <button type="button"  id="erase" onclick="eraseSolution();" >ERASE</button>
+        </form>
+    </div>
     <div id="MyCanvas">
         <canvas id="canvas" height="484px" width="484px">
             <img src="slike/maze.png" id="maze">
             
         </canvas>
-        <canvas id="canvas2" height="484px" width="484px">
+        <canvas id="canvas2" height="700px" width="700px">
             
             
         </canvas>
     </div>
-    <div>
-        <form id="form">
-            <button type="button" class="solve" id="sol" onclick="drawSolution();" >DRAW</button>
-            <button type="button"  id="sol" onclick="window.location.reload();" >ERASE</button>
-        </form>
-    </div>
+    
     
     
         

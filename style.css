@@ -4,7 +4,7 @@
 }
 
 #MyCanvas {
-
+    
 
     position: relative;
     width: fit-content;
@@ -15,6 +15,7 @@
 
 #canvas{
     display: block;
+    background-color: rgba(211,205,207,0.8);
 }
 #canvas2{
     
@@ -23,14 +24,55 @@
 }
 
 #form {
+    
     margin: auto;
     text-align: center;
 
 }
 
 #sol {
-   
-    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
     height: 50px;
     width: 200px;
+    background-color:rgba(211,205,207);
+}
+#erase{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    height: 50px;
+    width: 200px;
+    margin-top: 30%;
+    background-color:rgba(211,205,207);
+}
+body{
+    background-image: url('slike/paper.avif');
+}
+@font-face {
+    font-family: nyt;
+    src: url(font/Chomsky-8MOa2.otf);
+}
+@font-face {
+    font-family: heather;
+    src: url(font/Heathergreen.otf);
+}
+h1{
+    
+    margin-top: 50px;
+    font-size: 80px;
+    text-align: center;
+    font-family: nyt;
+} 
+ #buttons{
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 13%;
+    
+}
+#sol:hover,#erase:hover {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    height: 50px;
+    width: 200px;
+    background-color:rgb(141, 138, 139);
 }
