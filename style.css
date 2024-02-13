@@ -36,6 +36,7 @@
     height: 50px;
     width: 200px;
     background-color:rgba(211,205,207);
+    transition: 0.3s;
 }
 #erase{
     font-family: 'Times New Roman', Times, serif;
@@ -44,6 +45,7 @@
     width: 200px;
     margin-top: 30%;
     background-color:rgba(211,205,207);
+    transition: 0.3s;
 }
 body{
     background-image: url('slike/paper.avif');
@@ -57,7 +59,7 @@ body{
     src: url(font/Heathergreen.otf);
 }
 h1{
-    
+    text-shadow: -3px -3px 3px white;
     margin-top: 50px;
     font-size: 80px;
     text-align: center;
@@ -71,8 +73,7 @@ h1{
 }
 #sol:hover,#erase:hover {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    height: 50px;
-    width: 200px;
+    font-size: 40px; 
     background-color:rgb(141, 138, 139);
+    transition: 0.3s;
 }
