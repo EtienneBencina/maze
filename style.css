@@ -4,7 +4,7 @@
 }
 
 #MyCanvas {
-    
+    z-index: 1;
 
     position: relative;
     width: fit-content;
@@ -14,11 +14,12 @@
 }
 
 #canvas{
+    z-index: 1;
     display: block;
     background-color: rgba(211,205,207,0.8);
 }
 #canvas2{
-    
+    z-index: 1;
     position: absolute;
     top: 0;
 }
@@ -26,6 +27,7 @@
 #form {
     
     margin: auto;
+    z-index: 2;
     text-align: center;
 
 }
@@ -37,13 +39,14 @@
     width: 200px;
     background-color:rgba(211,205,207);
     transition: 0.3s;
+    z-index: 2;
 }
 #erase{
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     height: 50px;
     width: 200px;
-    margin-top: 30%;
+    z-index: 2;
     background-color:rgba(211,205,207);
     transition: 0.3s;
 }
@@ -66,14 +69,36 @@ h1{
     font-family: nyt;
 } 
  #buttons{
-    position: absolute;
-    margin-left: 25%;
-    margin-top: 13%;
+    margin-top: 2.5%;
+    z-index: 2;
     
 }
 #sol:hover,#erase:hover {
+    z-index: 2;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px; 
     background-color:rgb(141, 138, 139);
     transition: 0.3s;
+}
+#colors{
+    
+    margin: auto;
+    text-align: center;
+    margin-top: -30.6%;
+    margin-left: 30%;
+    height:481px;
+    width:100px;
+    background-color: rgba(211,205,207,0.8);
+    border-radius: 5%;
+
+}
+#footer{
+    position: relative;
+   z-index: 2;
+}
+#red,#orange,#green,#blue,#purple{
+    margin-top: 1.5%;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
 }

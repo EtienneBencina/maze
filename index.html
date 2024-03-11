@@ -8,12 +8,7 @@
 
 <body>
     <h1>NEWSPAPER MAZE</h1>
-    <div id="buttons">
-        <form id="form">
-            <button type="button" class="solve" id="sol" onclick="drawSolution();" >DRAW</button><br/><br/>
-            <button type="button"  id="erase" onclick="eraseSolution();" >ERASE</button>
-        </form>
-    </div>
+    
     <div id="MyCanvas">
         <canvas id="canvas" height="484px" width="484px">
             <img src="slike/maze.png" id="maze">
@@ -24,8 +19,21 @@
             
         </canvas>
     </div>
-    
-    
+    <div id="footer">
+        <div id="buttons">
+            <form id="form">
+                <button type="button" class="solve" id="sol" onclick="drawSolution();" >DRAW</button>
+                <button type="button"  id="erase" onclick="eraseSolution();" >ERASE</button>
+            </form>
+        </div>
+    </div>
+    <div id="colors">
+        <button type="button"  id="red" style="background-color: red;" onclick="redClick();"></button><br><br>
+        <button type="button"  id="orange" style="background-color: orange;" onclick="orangeClick();"></button><br><br>
+        <button type="button"  id="green" style="background-color: green;" onclick="greenClick();" ></button><br><br>
+        <button type="button"  id="blue" style="background-color: blue;" onclick="blueClick();"></button><br><br>
+        <button type="button"  id="purple" style="background-color: purple;" onclick="purpleClick();"></button>
+    </div>
     
         
 
