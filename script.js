@@ -43,32 +43,50 @@ var color = "#3d3739";
 function redClick() {
   color = "#ff0000";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("selected").style.backgroundColor="red";
-  document.getElementById("red").style.border="ridge 2px white";
-  document.getElementById("orange").style.border="ridge 2px black";
+  document.getElementById("red").style.border="solid 2px white";
+  document.getElementById("orange").style.border="solid 2px black";
+  document.getElementById("green").style.border="solid 2px black";
+  document.getElementById("blue").style.border="solid 2px black";
+  document.getElementById("purple").style.border="solid 2px black";
   
 }
 function orangeClick() {
   color = "#ffa500";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("selected").style.backgroundColor="orange";
-  document.getElementById("red").style.border="ridge 2px black";
-  document.getElementById("orange").style.border="ridge 2px white";
+  
+  document.getElementById("red").style.border="solid 2px black";
+  document.getElementById("orange").style.border="solid 2px white";
+  document.getElementById("green").style.border="solid 2px black";
+  document.getElementById("blue").style.border="solid 2px black";
+  document.getElementById("purple").style.border="solid 2px black";
 }
 function greenClick() {
   color = "#008000";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("selected").style.backgroundColor="green";
+  document.getElementById("red").style.border="solid 2px black";
+  document.getElementById("orange").style.border="solid 2px black";
+  document.getElementById("green").style.border="solid 2px white";
+  document.getElementById("blue").style.border="solid 2px black";
+  document.getElementById("purple").style.border="solid 2px black";
 }
 function blueClick() {
   color = "#0000ff";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("selected").style.backgroundColor="blue";
+  document.getElementById("red").style.border="solid 2px black";
+  document.getElementById("orange").style.border="solid 2px black";
+  document.getElementById("green").style.border="solid 2px black";
+  document.getElementById("blue").style.border="solid 2px white";
+  document.getElementById("purple").style.border="solid 2px black";
+  
 }
 function purpleClick() {
   color = "#800080";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("selected").style.backgroundColor="purple";
+  document.getElementById("red").style.border="solid 2px black";
+  document.getElementById("orange").style.border="solid 2px black";
+  document.getElementById("green").style.border="solid 2px black";
+  document.getElementById("blue").style.border="solid 2px black";
+  document.getElementById("purple").style.border="solid 2px white";
 }
 
 
