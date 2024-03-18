@@ -13,97 +13,125 @@
 
 }
 
-#canvas{
+#canvas {
     z-index: 1;
     display: block;
-    background-color: rgba(211,205,207,0.8);
-    margin-top: -20%;
+    background-color: rgba(211, 205, 207, 0.8);
+    margin-top: -15%;
 }
-#canvas2{
+
+#canvas2 {
     z-index: 1;
     position: absolute;
     top: 0;
 }
 
 #form {
-    
+
     margin: auto;
     z-index: 2;
     text-align: center;
 
 }
 
-#sol {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
+#sol,
+#erase {
     height: 50px;
     width: 200px;
-    background-color:rgba(211,205,207);
-    transition: 0.3s;
-    z-index: 2;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: rgba(231, 226, 220, 0.548);
 }
-#erase{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    height: 50px;
-    width: 200px;
-    z-index: 2;
-    background-color:rgba(211,205,207);
-    transition: 0.3s;
-}
-body{
+
+
+
+body {
     background-image: url('slike/paper.avif');
-    
+
 }
+
 @font-face {
     font-family: nyt;
     src: url(font/Chomsky-8MOa2.otf);
 }
+
 @font-face {
     font-family: heather;
     src: url(font/Heathergreen.otf);
 }
-h1{
+
+h1 {
     text-shadow: -3px -3px 3px white;
-    margin-top: 50px;
+    margin-top: 45px;
     font-size: 80px;
     text-align: center;
     font-family: nyt;
-} 
- #buttons{
-    margin-top: 10%;
-    z-index: 2;
-    
 }
-#sol:hover,#erase:hover {
+
+#buttons {
+    margin-top: 8%;
     z-index: 2;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px; 
-    background-color:rgb(141, 138, 139);
-    transition: 0.3s;
+
 }
-#colors{
+
+#sol:active,
+#erase:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+
+
+}
+
+#colors {
     position: relative;
     z-index: 3;
     margin: auto;
     text-align: center;
-    margin-top: -10%;
-    margin-left: 37%;
-    height:100px;
-    width:500px;
-    background-color: rgba(211,205,207,0.8);
-    border-radius: 5%;
-    
+    margin-top: -8.5%;
+    margin-left: 42%;
+    height: 60px;
+    width: 300px;
+    background-color: rgba(231, 226, 220, 0.548);
+    border-radius: 0%;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    border: 3px solid;
+}
 
-}
-#footer{
+#footer {
     position: relative;
-   z-index: 2;
+    z-index: 2;
 }
-#red,#orange,#green,#blue,#purple,#selected{
+
+#red,
+#orange,
+#green,
+#blue,
+#purple {
     margin-top: 1.5%;
     width: 50px;
-    height:50px;
+    height: 50px;
     border-radius: 50%;
+    border: 2px solid black;
     
+}
+
+
+
+@media (min-width: 768px) {
+    #sol,#erase {
+        padding: 0.25em 0.75em;
+    }
 }

@@ -43,50 +43,50 @@ var color = "#3d3739";
 function redClick() {
   color = "#ff0000";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("red").style.border="solid 2px white";
-  document.getElementById("orange").style.border="solid 2px black";
-  document.getElementById("green").style.border="solid 2px black";
-  document.getElementById("blue").style.border="solid 2px black";
-  document.getElementById("purple").style.border="solid 2px black";
+  document.getElementById("red").style.border="solid 2px whitesmoke";
+  document.getElementById("orange").style.border="2px solid black";
+  document.getElementById("green").style.border="2px solid black";
+  document.getElementById("blue").style.border="2px solid black";
+  document.getElementById("purple").style.border="2px solid black";
   
 }
 function orangeClick() {
   color = "#ffa500";
   document.getElementById("sol").removeAttribute("disabled");
   
-  document.getElementById("red").style.border="solid 2px black";
-  document.getElementById("orange").style.border="solid 2px white";
-  document.getElementById("green").style.border="solid 2px black";
-  document.getElementById("blue").style.border="solid 2px black";
-  document.getElementById("purple").style.border="solid 2px black";
+  document.getElementById("red").style.border="2px solid black";
+  document.getElementById("orange").style.border="solid 2px whitesmoke";
+  document.getElementById("green").style.border="2px solid black";
+  document.getElementById("blue").style.border="2px solid black";
+  document.getElementById("purple").style.border="2px solid black";
 }
 function greenClick() {
   color = "#008000";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("red").style.border="solid 2px black";
-  document.getElementById("orange").style.border="solid 2px black";
-  document.getElementById("green").style.border="solid 2px white";
-  document.getElementById("blue").style.border="solid 2px black";
-  document.getElementById("purple").style.border="solid 2px black";
+  document.getElementById("red").style.border="2px solid black";
+  document.getElementById("orange").style.border="2px solid black";
+  document.getElementById("green").style.border="solid 2px whitesmoke";
+  document.getElementById("blue").style.border="2px solid black";
+  document.getElementById("purple").style.border="2px solid black";
 }
 function blueClick() {
   color = "#0000ff";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("red").style.border="solid 2px black";
-  document.getElementById("orange").style.border="solid 2px black";
-  document.getElementById("green").style.border="solid 2px black";
-  document.getElementById("blue").style.border="solid 2px white";
-  document.getElementById("purple").style.border="solid 2px black";
+  document.getElementById("red").style.border="2px solid black";
+  document.getElementById("orange").style.border="2px solid black";
+  document.getElementById("green").style.border="2px solid black";
+  document.getElementById("blue").style.border="solid 2px whitesmoke";
+  document.getElementById("purple").style.border="2px solid black";
   
 }
 function purpleClick() {
   color = "#800080";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("red").style.border="solid 2px black";
-  document.getElementById("orange").style.border="solid 2px black";
-  document.getElementById("green").style.border="solid 2px black";
-  document.getElementById("blue").style.border="solid 2px black";
-  document.getElementById("purple").style.border="solid 2px white";
+  document.getElementById("red").style.border="2px solid black";
+  document.getElementById("orange").style.border="2px solid black";
+  document.getElementById("green").style.border="2px solid black";
+  document.getElementById("blue").style.border="2px solid black";
+  document.getElementById("purple").style.border="solid 2px whitesmoke";
 }
 
 
@@ -144,7 +144,7 @@ function drawSolution() {
     drawLineSegment(0);
 
   };
-  const delayBetweenLines = 30;
+  const delayBetweenLines = 35;
 
   drawLinesWithDelay(ctx, path, delayBetweenLines);
 
@@ -203,7 +203,7 @@ function eraseSolution() {
     drawLineSegment(0);
 
   };
-  const delayBetweenLines = 30;
+  const delayBetweenLines = 35;
 
   drawLinesWithDelay(ctx, pathback, delayBetweenLines);
 
