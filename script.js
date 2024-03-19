@@ -43,50 +43,58 @@ var color = "#3d3739";
 function redClick() {
   color = "#ff0000";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("red").style.border="solid 2px whitesmoke";
-  document.getElementById("orange").style.border="2px solid black";
-  document.getElementById("green").style.border="2px solid black";
-  document.getElementById("blue").style.border="2px solid black";
-  document.getElementById("purple").style.border="2px solid black";
-  
+  document.getElementById("red").style.border = "solid 2px whitesmoke";
+  document.getElementById("orange").style.border = "2px solid black";
+  document.getElementById("green").style.border = "2px solid black";
+  document.getElementById("blue").style.border = "2px solid black";
+  document.getElementById("purple").style.border = "2px solid black";
+  addAnimation(`
+      @keyframes farbe { 
+         
+        from {left:90px;top:600px;}
+    to {left:250px;top:790px;}
+        
+      }
+    `);
+
 }
 function orangeClick() {
   color = "#ffa500";
   document.getElementById("sol").removeAttribute("disabled");
-  
-  document.getElementById("red").style.border="2px solid black";
-  document.getElementById("orange").style.border="solid 2px whitesmoke";
-  document.getElementById("green").style.border="2px solid black";
-  document.getElementById("blue").style.border="2px solid black";
-  document.getElementById("purple").style.border="2px solid black";
+
+  document.getElementById("red").style.border = "2px solid black";
+  document.getElementById("orange").style.border = "solid 2px whitesmoke";
+  document.getElementById("green").style.border = "2px solid black";
+  document.getElementById("blue").style.border = "2px solid black";
+  document.getElementById("purple").style.border = "2px solid black";
 }
 function greenClick() {
   color = "#008000";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("red").style.border="2px solid black";
-  document.getElementById("orange").style.border="2px solid black";
-  document.getElementById("green").style.border="solid 2px whitesmoke";
-  document.getElementById("blue").style.border="2px solid black";
-  document.getElementById("purple").style.border="2px solid black";
+  document.getElementById("red").style.border = "2px solid black";
+  document.getElementById("orange").style.border = "2px solid black";
+  document.getElementById("green").style.border = "solid 2px whitesmoke";
+  document.getElementById("blue").style.border = "2px solid black";
+  document.getElementById("purple").style.border = "2px solid black";
 }
 function blueClick() {
   color = "#0000ff";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("red").style.border="2px solid black";
-  document.getElementById("orange").style.border="2px solid black";
-  document.getElementById("green").style.border="2px solid black";
-  document.getElementById("blue").style.border="solid 2px whitesmoke";
-  document.getElementById("purple").style.border="2px solid black";
-  
+  document.getElementById("red").style.border = "2px solid black";
+  document.getElementById("orange").style.border = "2px solid black";
+  document.getElementById("green").style.border = "2px solid black";
+  document.getElementById("blue").style.border = "solid 2px whitesmoke";
+  document.getElementById("purple").style.border = "2px solid black";
+
 }
 function purpleClick() {
   color = "#800080";
   document.getElementById("sol").removeAttribute("disabled");
-  document.getElementById("red").style.border="2px solid black";
-  document.getElementById("orange").style.border="2px solid black";
-  document.getElementById("green").style.border="2px solid black";
-  document.getElementById("blue").style.border="2px solid black";
-  document.getElementById("purple").style.border="solid 2px whitesmoke";
+  document.getElementById("red").style.border = "2px solid black";
+  document.getElementById("orange").style.border = "2px solid black";
+  document.getElementById("green").style.border = "2px solid black";
+  document.getElementById("blue").style.border = "2px solid black";
+  document.getElementById("purple").style.border = "solid 2px whitesmoke";
 }
 
 
@@ -98,7 +106,7 @@ function drawSolution() {
 
     var pencil = new Image();
     pencil.src = "slike/pencil.png";
-    
+
 
 
 
