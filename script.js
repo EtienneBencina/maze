@@ -48,14 +48,7 @@ function redClick() {
   document.getElementById("green").style.border = "2px solid black";
   document.getElementById("blue").style.border = "2px solid black";
   document.getElementById("purple").style.border = "2px solid black";
-  addAnimation(`
-      @keyframes farbe { 
-         
-        from {left:90px;top:600px;}
-    to {left:250px;top:790px;}
-        
-      }
-    `);
+  
 
 }
 function orangeClick() {
